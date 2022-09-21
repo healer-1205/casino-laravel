@@ -1,0 +1,258 @@
+/*  ==== Pool Table (table=slotview for JS purposes) Start  ====  */
+
+#ball-1, #ball-2, #ball-3, #ball-4, #ball-5, #ball-6, #ball-7, #ball-8, #ball-9, #ball-10 {
+border: 2px solid #000000;
+border-radius: 50%;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 50%;
+left: 50%;
+overflow: hidden;
+z-index: 10;
+} 
+#ball-1 {
+margin: -225px 0px 0px 140px;
+background-color: #FFFF00;
+animation: sink 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+} 
+@keyframes sink { 
+0%  {transform: translate(-475px, 210px);}
+20%   {transform: translate(   0px,   0px);}
+30%  {transform: translate( 190px,-100px);}
+75%  {transform: translate(-575px,  80px);}
+85% {transform: translate(   0px,   0px);}
+100%  {transform: translate( 140px,-210px);}
+} 
+@keyframes sinkk { 
+0%   {transform: translate(   0px,   0px);}
+20%  {transform: translate(-575px,  80px);}
+30%  {transform: translate(-475px, -210px);}
+75%  {transform: translate( 140px,-210px);}
+85%  {transform: translate( 190px,-100px);}
+100% {transform: translate(   0px,   0px);}
+} 
+@keyframes sinkkk { 
+0%  {transform: translate( 190px,-100px);}
+20%  {transform: translate(-575px,  80px);}
+30%  {transform: translate(-475px, 210px);}
+75% {transform: translate(   0px,   0px);}
+85%  {transform: translate( 140px,-210px);}
+100%   {transform: translate(   0px,   0px);}
+} 
+@keyframes sinkkkk { 
+0%  {transform: translate( -0px,-100px);}
+20%   {transform: translate(   0px,   0px);}
+30%  {transform: translate(-575px,  -80px);}
+85% {transform: translate(   0px,   0px);}
+75%  {transform: translate(-475px, 210px);}
+100%  {transform: translate( 140px,-210px);}
+}
+@keyframes ballFv { 
+0%   {transform: translate(   0px,   0px);}
+20%  {transform: translate( -0px,-100px);}
+30%  {transform: translate(-475px, -210px);}
+75% {transform: translate(   0px,   0px);}
+85%  {transform: translate( 140px,-210px);}
+100%  {transform: translate(-575px,  80px);}
+}
+@keyframes ballsx { 
+0%  {transform: translate(-475px, 210px);}
+20%   {transform: translate(   0px,   0px);}
+30%  {transform: translate( 190px,-160px);}
+85% {transform: translate(   0px,   0px);}
+75%  {transform: translate(-575px,  -80px);}
+100%  {transform: translate( 140px,-210px);}
+}
+@keyframes ballsv { 
+0%   {transform: translate(   0px,   0px);}
+20%  {transform: translate(-585px, 290px);}
+30% {transform: translate(   0px,   0px);}
+75%  {transform: translate( 1800px,-160px);}
+85%  {transform: translate(-575px,  -80px);}
+100%  {transform: translate( 140px,-210px);}
+} 
+@keyframes ballei { 
+0%   {transform: translate(   0px,   0px);}
+20%  {transform: translate( -0px,-100px);}
+30%  {transform: translate(-475px, -210px);}
+75% {transform: translate(   0px,   0px);}
+85%  {transform: translate( 140px,-210px);}
+100%  {transform: translate(-575px,  120px);}
+} 
+@keyframes ballnn { 
+0%  {transform: translate(-475px, 210px);}
+20%   {transform: translate(   0px,   0px);}
+30%  {transform: translate( 190px,-100px);}
+75%  {transform: translate(-575px,  80px);}
+85% {transform: translate(   0px,   0px);}
+100%  {transform: translate( 140px,-210px);}
+}
+@keyframes ballten { 
+0%  {transform: translate( 190px,-100px);}
+20%  {transform: translate(-575px,  80px);}
+30%  {transform: translate(-475px, 210px);}
+75% {transform: translate(   0px,   0px);}
+85%  {transform: translate( 140px,-210px);}
+100%   {transform: translate(   0px,   0px);}
+} 
+#ball-2 {
+margin: -140px 0px 0px -120px;
+background-color: #0000FF;
+animation: sinkk 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-3 {
+margin: 50px 0px 0px -250px;
+background-color: #FF0000;
+animation: sinkkk 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-4 {
+margin: -190px 0px 0px -350px;
+background-color: #990099;
+animation: sinkkkk 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-5 {
+margin: 100px 0px 0px -300px;
+background-color: #FF9900;
+animation: ballFv 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-6 {
+margin: 70px 0px 0px -180px;
+background-color: #006600;
+background: linear-gradient(to bottom, #ffffff 0%,#ffffff 20%,#006600 20%,#006600 50%,#006600 80%,#ffffff 80%,#ffffff 100%);
+transform: rotate(45deg);
+animation: ballsx 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-7 {
+margin: 150px 0px 0px 220px;
+background-color: #800000;
+animation: ballsv 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-8 {
+margin: -180px 0px 0px 50px;
+background-color: #000000;
+animation: ballei 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+#ball-9 {
+margin: -125px 0px 0px -350px;
+background-color: #FFFF00;
+animation: ballnn 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+background: linear-gradient(to bottom, #ffffff 0%,#ffffff 20%,#ffff00 20%,#ffff00 50%,#ffff00 80%,#ffffff 80%,#ffffff 100%);
+}
+#ball-10 {
+margin: -200px 0px 0px -170px;
+background-color: #0000FF;
+animation: ballten 4s linear infinite;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+background: linear-gradient(to bottom, #ffffff 0%,#ffffff 20%,#0000ff 20%,#0000ff 50%,#0000ff 80%,#ffffff 80%,#ffffff 100%); 
+transform: rotate(85deg);
+}
+.poolNumber {
+margin: -6px 0px 0px -6px;
+border-radius: 50%;
+background-color: #fff !important;
+color: black !important;
+width: 20px;
+height: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+text-align: center;
+font-size: 10px;
+font-weight: bold;
+line-height: 20px;
+}
+
+
+@media (max-width: 1875px){
+    #ball-1{
+	    margin: -225px 0px 0px 80px;
+	}
+	#ball-4 {
+    	margin: -65px 0px 0px -32px;
+	}
+	#ball-3 {
+    	margin: -100px 0px 0px 36px;
+	}
+	#ball-7 {
+    	margin: -50px 0px 0px 18px;
+	}
+	#ball-6 {
+    	margin: -33px 0px 0px -86px;
+	}
+	#ball-5 {
+    	margin: 22px 0px 0px -19px;
+	}
+}
+.poolss{
+	max-width: 16%;
+	cursor: pointer;
+	margin: 0px 15px 13px;
+}
+
+@media (max-width: 1806px){
+    .poolss {
+	    margin: 0px 14px 13px;
+	}
+}
+
+@media (max-width: 1775px){
+    .poolss {
+	    margin: 0px 10px 13px;
+	}
+}
+
+@media (max-width: 1647px){
+    .poolss {
+	    margin: 0px 7px 13px;
+	}
+}
+
+@media (max-width: 1550px){
+    .poolss {
+	    max-width: 14% !important;
+	}
+}
+
+@media (max-width: 1119px){
+    .poolss {
+	    max-width: 30% !important;
+	}
+}
+
+@media (max-width: 635px){
+    .poolss {
+	    max-width: 14% !important;
+	}
+}
+
+@media (max-width: 991px){
+    .poolss {
+	    max-width: 14% !important;
+	}
+}
+.finish >div {
+	opacity: 0;
+}
+.finish .test {
+	opacity: 1;
+}

@@ -1,0 +1,326 @@
+#cards {
+  position: relative;
+}
+.cards {
+    position: absolute;
+    display: inline-block;
+    left: -3.9375rem;
+    top: -16.75rem;
+    width: 7.875rem;
+    height: 12.5rem;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    cursor: default;
+    will-change: transform;
+}
+.cards:before,
+.cards:after {
+  position: absolute;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 0.7rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  white-space: pre-line;
+  width: 0.55rem;
+  letter-spacing: -0.1rem;
+}
+.cards:before {
+  top: 0.15rem;
+  left: 0;
+}
+.cards:after {
+  bottom: 0.1rem;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.cards .face {
+  height: 100%;
+  background-position: 50% 50%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.cards .back {
+  position: absolute;
+  background-image: url("faces/back.png");
+  background-position: 50% 50%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.cards.spades,
+.cards.clubs,
+.cards.joker {
+  color: #000;
+}
+.cards.hearts,
+.cards.diamonds,
+.cards.joker.rank3 {
+  color: #d40000;
+}
+.cards.spades.rank1 .face {
+  background-image: url("faces/01.png");
+}
+.cards.spades.rank2 .face {
+  background-image: url("faces/2.png");
+}
+.cards.spades.rank3 .face {
+  background-image: url("faces/03.png");
+}
+.cards.spades.rank4 .face {
+  background-image: url("faces/04.png");
+}
+.cards.spades.rank5 .face {
+  background-image: url("faces/05.png");
+}
+.cards.spades.rank6 .face {
+  background-image: url("faces/06.png");
+}
+.cards.spades.rank7 .face {
+  background-image: url("faces/07.png");
+}
+.cards.spades.rank8 .face {
+  background-image: url("faces/08.png");
+}
+.cards.spades.rank9 .face {
+  background-image: url("faces/09.png");
+}
+.cards.spades.rank10 .face {
+  background-image: url("faces/10.png");
+}
+.cards.spades.rank11 .face {
+  background-image: url("faces/11.png");
+}
+.cards.spades.rank12 .face {
+  background-image: url("faces/12.png");
+}
+.cards.spades.rank13 .face {
+  background-image: url("faces/13.png");
+}
+.cards.hearts.rank1 .face {
+  background-image: url("faces/14.png");
+}
+.cards.hearts.rank2 .face {
+  background-image: url("faces/15.png");
+}
+.cards.hearts.rank3 .face {
+  background-image: url("faces/16.png");
+}
+.cards.hearts.rank4 .face {
+  background-image: url("faces/17.png");
+}
+.cards.hearts.rank5 .face {
+  background-image: url("faces/18.png");
+}
+.cards.hearts.rank6 .face {
+  background-image: url("faces/19.png");
+}
+.cards.hearts.rank7 .face {
+  background-image: url("faces/20.png");
+}
+.cards.hearts.rank8 .face {
+  background-image: url("faces/21.png");
+}
+.cards.hearts.rank9 .face {
+  background-image: url("faces/22.png");
+}
+.cards.hearts.rank10 .face {
+  background-image: url("faces/23.png");
+}
+.cards.hearts.rank11 .face {
+  background-image: url("faces/24.png");
+}
+.cards.hearts.rank12 .face {
+  background-image: url("faces/25.png");
+}
+.cards.hearts.rank13 .face {
+  background-image: url("faces/26.png");
+}
+.cards.clubs.rank1 .face {
+  background-image: url("faces/27.png");
+}
+.cards.clubs.rank2 .face {
+  background-image: url("faces/28.png");
+}
+.cards.clubs.rank3 .face {
+  background-image: url("faces/29.png");
+}
+.cards.clubs.rank4 .face {
+  background-image: url("faces/30.png");
+}
+.cards.clubs.rank5 .face {
+  background-image: url("faces/31.png");
+}
+.cards.clubs.rank6 .face {
+  background-image: url("faces/33.png");
+}
+.cards.clubs.rank7 .face {
+  background-image: url("faces/34.png");
+}
+.cards.clubs.rank8 .face {
+  background-image: url("faces/35.png");
+}
+.cards.clubs.rank9 .face {
+  background-image: url("faces/36.png");
+}
+.cards.clubs.rank10 .face {
+  background-image: url("faces/37.png");
+}
+.cards.clubs.rank11 .face {
+  background-image: url("faces/38.png");
+}
+.cards.clubs.rank12 .face {
+  background-image: url("faces/39.png");
+}
+.cards.clubs.rank13 .face {
+  background-image: url("faces/40.png");
+}
+.cards.diamonds.rank1 .face {
+  background-image: url("faces/41.png");
+}
+.cards.diamonds.rank2 .face {
+  background-image: url("faces/42.png");
+}
+.cards.diamonds.rank3 .face {
+  background-image: url("faces/43.png");
+}
+.cards.diamonds.rank4 .face {
+  background-image: url("faces/44.png");
+}
+.cards.diamonds.rank5 .face {
+  background-image: url("faces/45.png");
+}
+.cards.diamonds.rank6 .face {
+  background-image: url("faces/46.png");
+}
+.cards.diamonds.rank7 .face {
+  background-image: url("faces/47.png");
+}
+.cards.diamonds.rank8 .face {
+  background-image: url("faces/48.png");
+}
+.cards.diamonds.rank9 .face {
+  background-image: url("faces/49.png");
+}
+.cards.diamonds.rank10 .face {
+  background-image: url("faces/50.png");
+}
+.cards.diamonds.rank11 .face {
+  background-image: url("faces/51.png");
+}
+.cards.diamonds.rank12 .face {
+  background-image: url("faces/52.png");
+}
+.cards.diamonds.rank13 .face {
+  background-image: url("faces/53.png");
+}
+.cards.joker.rank1 .face {
+  background-image: url("faces/41.png");
+}
+.cards.joker.rank2 .face {
+  background-image: url("faces/42.png");
+}
+.cards.joker.rank3 .face {
+  background-image: url("faces/43.png");
+}
+@media (max-width: 540px) {
+  #topbar {
+    text-align: left;
+  }
+  .gh-ribbon {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+}
+
+
+.gmimg{
+    max-width: 30%;
+    cursor: pointer !important;
+  }
+  .op{
+    opacity: 0.5;
+  }
+  .opc{
+    opacity: 0.3;
+  }
+  .fly{
+    width: 100%;
+    height: 355px;
+  }
+  .none{
+    display: none;
+  }
+  #game .row{
+    margin-top: 18px;
+  }
+  .show{
+    height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+      opacity: 1;
+  }
+  .hide{
+    height: 0%;
+      width: 0%;
+      overflow-y:hidden;
+      overflow-x:hidden;
+      opacity: 0;
+  }
+  #cards{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+  }
+.t--60px {
+  top: 60px !important;
+}
+.deck {
+  position: relative;
+}
+.res-thumb-img {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  top: 50% !important;
+  left: 50%;
+}
+.res-thumb-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.res-thumb-img .res--card--img {
+  position: absolute !important;
+  width: 160px !important;
+  height: 224px !important;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
